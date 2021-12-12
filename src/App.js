@@ -1,10 +1,19 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import {Login} from './components/Login/Login.js';
 import './App.css';
+// import { Todo } from './components/Todo/Todo.js';
+import { Header } from './components/Header/Header.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+        <Login></Login>
+        <Header></Header>
+        <Header firstName="Rami" lastName="Shmila"></Header>
+        <Header firstName="Doron" lastName="Arnon"></Header>
+        <Header firstName="Igor" ></Header>
+        {/* <Todo></Todo>  */}
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +26,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
